@@ -17,8 +17,12 @@ app.use(express.json());
 
 // ── Database connection ──────────────────────────────────────
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: { rejectUnauthorized: false }
+  host:     'db.mqwmlwlqrdfanwxhczqi.supabase.co',
+  port:     5432,
+  database: 'postgres',
+  user:     'postgres',
+  password: process.env.Whatismy_name123,
+  ssl:      { rejectUnauthorized: false }
 });
 
 // Test DB on startup
